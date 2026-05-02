@@ -43,7 +43,7 @@ contract BASTToken {
     }
 
     /**
-     * @dev Owner 调用此函数发放初始空投，可多次调用
+     * @dev Owner 
      */
     function distributeInitialAirdrop(address[] calldata recipients) public onlyOwner {
         for (uint256 i = 0; i < recipients.length; i++) {
@@ -59,7 +59,7 @@ contract BASTToken {
     }
 
     /**
-     * @dev 任何人可根据自己持有的 ETH 数量领取空投 (ETH余额 × 10)
+     * @dev 
      */
     function claimAirdrop() public {
         require(!hasClaimed[msg.sender], unicode"이미 claim했습니다");
@@ -86,3 +86,7 @@ contract BASTToken {
         }
     }
 }
+0x323A2b2735a9a9D7CFDd6CE79D6B7b1b6301d083
+
+
+
